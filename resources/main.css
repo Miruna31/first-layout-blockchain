@@ -3,8 +3,8 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
 }
+
 .wrapper{
     background-image: url(../assets/background.jpg);
     height: 100%;
@@ -13,6 +13,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 header{
@@ -96,3 +97,127 @@ p{
     width: 55%;
 }
 
+/* for the contact page */
+
+[page="contact"] .wrapper{
+    height: 35%;
+    max-width: 100%;
+}
+
+.contact-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.contact-container{
+    padding-left: 60px;
+}
+
+.contact-container .contact{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Open Sans', Georgia, sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.contact::after{
+    content: "";
+    width: 300px;
+    height: 1px;
+    background: #acfdfe;
+    display: inline-block;
+    vertical-align: super;
+    opacity: 0.7;
+}
+
+.description div:first-child{
+    color: white;
+    font-size: 18px;
+    font-family: 'Open Sans', Georgia, Arial, sans-serif;
+    opacity: 0.8;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 400px;
+    height: 35px;
+    padding: 10px 10px 30px 0px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 22px;
+    left: 10px;
+    color: lightgray;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+}
+
+label{
+    font-family:'Open Sans', Georgia, sans-serif;
+}
+
+.underline {
+    border-bottom: solid 2px #acfdfe;
+    width: 435px;
+    padding: 15px 0px;
+  }
+
+.message{
+    padding: 40px 10px 30px 0px;
+}
+
+.message textarea{
+    width: 430px;
+    height: 100px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    background-color:aqua ;
+    color: rgb(62, 60, 60);
+    border: none;
+    width: 110px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.enter{
+    border: none;
+    background: none;
+    padding: 2px;
+}
+
+.enter.press{
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 40px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Open Sans', Georgia, sans-serif;
+}
+
+ footer div:last-child{
+    color:aqua ;
+ }

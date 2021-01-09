@@ -7,14 +7,82 @@
     <meta name="author" content="Miruna Arcaleanu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
+    <link href="../bundles/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../resources/main.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <section>
-            <h1>Contact us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-    </main>
+
+<body page="contact">
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <header>
+                <div class="logo-container">
+                    <img src="../assets/logo.png" alt="Logo">
+                </div>
+                <nav>
+                    <a target="_blank" href="community.html" title="Community">Community</a>
+                    <a target="_blank" href="contact.html" title="Contact" >Contact</a>
+                    <a target="_blank" href="services.html" title="Services">Services</a>
+                    <a target="_blank" href="about.html" >About</a>
+                    <a target="_blank" class="sign-up" href="sign-up.html">Sign up</a>
+                    
+                </nav>
+            </header>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-container">
+                <div class="contact">
+                    <div>Contact Us</div>
+                </div>
+                <div class="description">
+                    <div>Fill out the form below to learn more.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form>
+                <label for="first-name"> First Name</label><br>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input type="text" required  id="first-name" placeholder="Enter your first name" minlength="5">
+                </div>
+
+                <label for="last-name">Last Name</label><br>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input type="text" required  id="last-name" placeholder="Enter your last name" minlength="5">
+                </div>
+
+                <label for="emailInput">Email</label><br>
+                <div class="input-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input required  type="email" id="emailInput" placeholder="Enter your email" />
+                </div>
+
+                <div class="underline"></div>
+
+                <div class="message">
+                    <label for="textarea"> Message</label><br>
+                    <textarea required  id="textarea" minlength="50" maxLength="250"></textarea>
+                </div>
+                <div class="submit-container">
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="submit" value="or press" class="enter">
+                    <input type="submit" value="enter" class="enter press" >
+                </div>
+                
+            </form>
+        </div>
+        <footer>
+            <div>Blockchain</div>
+            <div>Technology</div>
+        </footer>
+
+    </div>
     
 </body>
 </html>
