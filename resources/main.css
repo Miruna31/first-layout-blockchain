@@ -18,8 +18,9 @@ body, html {
 
 header{
     padding: 60px;
-    margin-left: 50px;
-    margin-right: 100px;
+    /* nu vrei margin aici sa te asiguri ca logo este aliniat cu cele 2 titluri */
+    /* margin-left: 50px;
+    margin-right: 100px; */
 }
 
 .logo-container{
@@ -142,7 +143,8 @@ p{
 .form-container{
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  /* ti-am atasat screenshot cand nu este suficient spatiul ce se intampla */
+  padding-top: 60px;
 }
 
 .input-wrapper {
