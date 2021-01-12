@@ -22,9 +22,6 @@ body, html {
 
 header{
     padding:30px 60px 60px 60px;
-    /* nu vrei margin aici sa te asiguri ca logo este aliniat cu cele 2 titluri */
-    /* margin-left: 50px; */
-    /* margin-right: 100px; */
 }
 
 .logo-container{
@@ -105,7 +102,7 @@ p{
 /* for the contact page */
 
 [page="contact"] .wrapper{
-    height: 27%;
+    height: 200px;
     max-width: 100%;
 }
 
@@ -147,8 +144,8 @@ p{
 .form-container{
   display: flex;
   justify-content: center;
-  padding-top: 65px;
-  /* min-height: 100% */
+  /* ti-am atasat screenshot cand nu este suficient spatiul ce se intampla */
+  padding-top: 50px;
 }
 
 .input-wrapper {
@@ -174,6 +171,10 @@ p{
 label{
     font-family:'Open Sans', Georgia, sans-serif;
 }
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: lightgray;
+  }
 
 .underline {
     border-bottom: solid 2px #acfdfe;
