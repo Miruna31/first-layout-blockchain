@@ -16,17 +16,21 @@ body, html {
     box-sizing: border-box;
 }
 
+.header-wrapper{
+    height: 90px;
+}
+
 header{
-    padding: 60px;
+    padding:30px 60px 60px 60px;
     /* nu vrei margin aici sa te asiguri ca logo este aliniat cu cele 2 titluri */
-    /* margin-left: 50px;
-    margin-right: 100px; */
+    /* margin-left: 50px; */
+    /* margin-right: 100px; */
 }
 
 .logo-container{
     float: left;
     width: 100px;
-    height: 100px;
+    height: 50px;
 }
 
 .logo-container img{
@@ -101,7 +105,7 @@ p{
 /* for the contact page */
 
 [page="contact"] .wrapper{
-    height: 35%;
+    height: 27%;
     max-width: 100%;
 }
 
@@ -143,8 +147,8 @@ p{
 .form-container{
   display: flex;
   justify-content: center;
-  /* ti-am atasat screenshot cand nu este suficient spatiul ce se intampla */
-  padding-top: 60px;
+  padding-top: 65px;
+  /* min-height: 100% */
 }
 
 .input-wrapper {
@@ -202,14 +206,14 @@ label{
     margin-right: 20px;
 }
 
-.enter{
-    border: none;
-    background: none;
-    padding: 2px;
+.press{
+    padding-top: 4px;
 }
 
-.enter.press{
+.enter{
+    color: black;
     font-weight: bold;
+    padding: 5px 0px 0px 0px;
 }
 
 footer {
